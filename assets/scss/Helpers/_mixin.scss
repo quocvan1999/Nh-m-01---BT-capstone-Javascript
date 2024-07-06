@@ -3,3 +3,18 @@
   font-weight: $fw;
   color: $color;
 }
+
+@mixin buttonStyle($fz, $fw, $c, $bg, $p, $bd, $br, $bg-hover, $c-hover) {
+  @include textStyle($fz, $fw, $c);
+  background: $bg;
+  padding: $p;
+  border: $bd;
+  border-radius: $br;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: $c-hover;
+    background: $bg-hover;
+  }
+}

@@ -1,0 +1,142 @@
+.product-detail {
+  margin-top: 100px;
+  padding: 30px 0;
+  @media screen and (max-width: 768px) {
+    padding: 10px 0;
+  }
+  .container {
+    display: flex;
+    gap: 50px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .detail-img {
+      img {
+        display: block;
+        max-width: 334px;
+      }
+    }
+    .detail-content {
+      .product-name {
+        @include textStyle($fs-4xl, $fw-300, $text-black);
+        line-height: $lh-5;
+      }
+      .product-describe {
+        @include textStyle($fs-1xl, $fw-400, $text-black);
+        line-height: $lh-1;
+        margin: 15px 0;
+      }
+      .product-size {
+        h3 {
+          @include textStyle($fs-3xl, $fw-500, $text-green);
+          line-height: $lh-3;
+        }
+        .list-size {
+          margin-top: 5px;
+          .btn-size {
+            @extend .button;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      .product-price {
+        @include textStyle($fs-4xl, $fw-600, $text-red);
+        line-height: $lh-5;
+        margin: 15px 0;
+      }
+      .quantity {
+        display: flex;
+        .btn-quantity {
+          @extend .button;
+          font-size: $fs-4xl;
+          line-height: $lh-5;
+          color: $text-primary;
+          background: $bg-gradient-01;
+          width: 50px;
+          height: 50px;
+        }
+        .number {
+          @include textStyle($fs-4xl, $fw-400, $text-black);
+          line-height: $lh-5;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .btn-addToCard {
+        @extend .button;
+        @include textStyle($fs-3xl, $fw-500, $text-primary);
+        line-height: $lh-3;
+        background: $bg-gradient-02;
+        padding: 10px 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.product-relate {
+  .container {
+    .title {
+      @include textStyle($fs-5xl, $fw-400, $text-black);
+      line-height: $lh-6;
+      margin: 50px 0;
+      text-align: center;
+    }
+    .product-list {
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .col {
+          padding: 10px;
+          width: calc(100% / 3);
+          .item-img {
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+          .item-content {
+            width: 100%;
+            background: $bg-gray;
+            .content {
+              padding: 15px;
+              .item-name {
+                @include textStyle($fs-3xl, $fw-300, $text-black);
+                line-height: $lh-3;
+              }
+              .item-describe {
+                @include textStyle($fs-2xl, $fw-300, $text-gray-500);
+                line-height: $lh-3;
+              }
+            }
+            .item-action {
+              display: flex;
+              .btn-buy {
+                @extend .button;
+                @include textStyle($fs-3xl, $fw-200, $text-black);
+                background: $bg-yellow-200;
+                line-height: $lh-3;
+                width: 60%;
+                padding: 15px 0;
+              }
+              .item-price {
+                @include textStyle($fs-3xl, $fw-600, $text-black);
+                line-height: $lh-3;
+                background: $gray-300;
+                width: 40%;
+                text-align: center;
+                padding: 15px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

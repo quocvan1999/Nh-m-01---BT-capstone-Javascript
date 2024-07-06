@@ -58,6 +58,7 @@
     }
   }
   .header-nav {
+    background: $bg-primary;
     @media screen and (max-width: 768px) {
       background-color: $bg-gray-200;
       display: none;
