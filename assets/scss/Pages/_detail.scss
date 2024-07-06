@@ -36,6 +36,7 @@
           margin-top: 5px;
           .btn-size {
             @extend .button;
+            margin-right: 5px;
             width: 50px;
             height: 50px;
           }
@@ -120,6 +121,7 @@
               .item-describe {
                 @include textStyle($fs-2xl, $fw-300, $text-gray-500);
                 line-height: $lh-3;
+                margin-top: 10px;
               }
             }
             .item-action {
@@ -131,6 +133,8 @@
                 line-height: $lh-3;
                 width: 60%;
                 padding: 15px 0;
+                display: inline-block;
+                text-align: center;
               }
               .item-price {
                 @include textStyle($fs-3xl, $fw-600, $text-black);
