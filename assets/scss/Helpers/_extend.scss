@@ -1,0 +1,25 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-active {
+  font-weight: $fw-400 !important;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $bg-black;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
