@@ -1,0 +1,19 @@
+.footer-item {
+  .footer-title {
+    @include textStyle($fs-2xl, $fw-700, $text-black);
+    line-height: $lh-2;
+  }
+  .footer-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    .footer-item {
+      @include textStyle($fs-1xl, $fw-400, $text-black);
+      line-height: $lh-1;
+      margin-top: 5px;
+    }
+    .footer-item-btn {
+      color: $text-red;
+    }
+  }
+}
