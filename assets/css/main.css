@@ -65,7 +65,7 @@ a {
   color: #fc0303;
 }
 
-.button, .register .container #form-register .btn-submit, .product-relate .container .product-list .row .col .item-content .item-action .btn-buy, .product-detail .container .detail-content .btn-addToCard, .product-detail .container .detail-content .quantity .btn-quantity, .product-detail .container .detail-content .product-size .list-size .btn-size {
+.button, .register .container #form-register .submit .btn-submit, .product-relate .container .product-list .row .col .item-content .item-action .btn-buy, .product-detail .container .detail-content .btn-addToCard, .product-detail .container .detail-content .quantity .btn-quantity, .product-detail .container .detail-content .product-size .list-size .btn-size {
   font-size: 24px;
   font-weight: 600;
   color: #000000;
@@ -76,7 +76,7 @@ a {
   transition: all 0.3s;
   cursor: pointer;
 }
-.button:hover, .register .container #form-register .btn-submit:hover, .product-relate .container .product-list .row .col .item-content .item-action .btn-buy:hover, .product-detail .container .detail-content .btn-addToCard:hover, .product-detail .container .detail-content .quantity .btn-quantity:hover, .product-detail .container .detail-content .product-size .list-size .btn-size:hover {
+.button:hover, .register .container #form-register .submit .btn-submit:hover, .product-relate .container .product-list .row .col .item-content .item-action .btn-buy:hover, .product-detail .container .detail-content .btn-addToCard:hover, .product-detail .container .detail-content .quantity .btn-quantity:hover, .product-detail .container .detail-content .product-size .list-size .btn-size:hover {
   color: #000000;
   background: #ececec;
 }
@@ -441,16 +441,31 @@ a {
 .register .container #form-register .row {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .register .container #form-register .row .col {
-  width: 50%;
+  width: calc(50% - 10px);
   display: flex;
-  margin-bottom: 15px;
+  align-items: center;
+}
+.register .container #form-register .row .col .lable-radio {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  margin-right: 20px;
+}
+.register .container #form-register .row .col .input-radio {
+  width: 30px;
+  height: 30px;
 }
 .register .container #form-register .row .col .thongBao {
   color: #fc0303;
 }
-.register .container #form-register .btn-submit {
+.register .container #form-register .submit {
+  width: 50%;
+  margin-top: 10px;
+}
+.register .container #form-register .submit .btn-submit {
   font-size: 30px;
   font-weight: 400;
   color: #ffffff;
