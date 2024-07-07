@@ -11,7 +11,6 @@ import {
 
 let url = "https://apistore.cybersoft.edu.vn/api/Users/signup";
 let arrInput = document.querySelectorAll("#form-register .input-control");
-let arrTB = document.querySelectorAll(".thongBao");
 let genderValue = document.getElementsByName("gender");
 
 document.querySelector(".btn-submit").onclick = async function (e) {
