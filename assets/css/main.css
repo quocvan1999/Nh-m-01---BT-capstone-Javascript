@@ -448,6 +448,11 @@ a {
   width: calc(50% - 10px);
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .register .container #form-register .row .col {
+    width: 100%;
+  }
+}
 .register .container #form-register .row .col div {
   display: flex;
   align-items: center;
