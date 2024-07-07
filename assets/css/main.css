@@ -81,7 +81,7 @@ a {
   background: #ececec;
 }
 
-.input, .register .container #form-register .row .col .input-control {
+.input, .register .container #form-register .row .col div .input-control {
   width: 100%;
   padding: 5px 0;
   border-bottom: 3px solid #ae18e2;
@@ -89,17 +89,17 @@ a {
   font-weight: 400;
   color: #000000;
 }
-.input::-moz-placeholder, .register .container #form-register .row .col .input-control::-moz-placeholder {
+.input::-moz-placeholder, .register .container #form-register .row .col div .input-control::-moz-placeholder {
   font-size: 30px;
   font-weight: 400;
   color: #000000;
 }
-.input::placeholder, .register .container #form-register .row .col .input-control::placeholder {
+.input::placeholder, .register .container #form-register .row .col div .input-control::placeholder {
   font-size: 30px;
   font-weight: 400;
   color: #000000;
 }
-.input:focus, .register .container #form-register .row .col .input-control:focus {
+.input:focus, .register .container #form-register .row .col div .input-control:focus {
   outline: none;
 }
 
@@ -441,12 +441,20 @@ a {
 .register .container #form-register .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 20px;
 }
 .register .container #form-register .row .col {
   width: calc(50% - 10px);
+  align-items: center;
+}
+.register .container #form-register .row .col div {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.register .container #form-register .row .col div .required {
+  color: #fc0303;
 }
 .register .container #form-register .row .col .lable-radio {
   font-size: 30px;
@@ -457,13 +465,16 @@ a {
 .register .container #form-register .row .col .input-radio {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
 }
 .register .container #form-register .row .col .thongBao {
   color: #fc0303;
+  font-size: 16px;
+  height: 1rem;
 }
 .register .container #form-register .submit {
   width: 50%;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .register .container #form-register .submit .btn-submit {
   font-size: 30px;

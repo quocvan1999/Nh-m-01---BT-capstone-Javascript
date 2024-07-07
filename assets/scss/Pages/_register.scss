@@ -11,13 +11,21 @@
       .row {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         gap: 20px;
         .col {
           width: calc(50% - 10px);
-          display: flex;
           align-items: center;
-          .input-control {
-            @extend .input;
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .input-control {
+              @extend .input;
+            }
+            .required {
+              color: $text-red;
+            }
           }
           .lable-radio {
             @include textStyle($fs-4xl, $fw-400, $text-black);
@@ -26,15 +34,18 @@
           .input-radio {
             width: 30px;
             height: 30px;
+            margin-right: 10px;
           }
           .thongBao {
             color: $text-red;
+            font-size: $fs-1xl;
+            height: 1rem;
           }
         }
       }
       .submit {
         width: 50%;
-        margin-top: 10px;
+        margin-top: 30px;
         .btn-submit {
           @extend .button;
           @include textStyle($fs-4xl, $fw-400, $text-primary);

@@ -1,6 +1,6 @@
 import { getApiDataIDAsync } from "../assets/util/method.js";
 
-let url = "https://shop.cyberlearn.vn/api/Product/getbyid?id=";
+let url = "https://apistore.cybersoft.edu.vn/api/Product/getbyid?id=";
 
 window.renderDetailProduct = function (product) {
   let html = "";

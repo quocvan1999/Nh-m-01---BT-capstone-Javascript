@@ -72,72 +72,90 @@
         <form id="form-register">
           <div class="row">
             <div class="col">
-              <input
-                name="email"
-                id="email"
-                type="email"
-                class="input-control"
-                placeholder="email"
-              />
-              <p class="thongBao tb-email">(*)</p>
+              <div>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  class="input-control"
+                  placeholder="email"
+                />
+                <p class="required">(*)</p>
+              </div>
+              <p id="tb-email" class="thongBao"></p>
             </div>
             <div class="col">
-              <input
-                name="name"
-                id="name"
-                type="text"
-                class="input-control"
-                placeholder="name"
-              />
-              <p class="thongBao tb-name">(*)</p>
+              <div>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  class="input-control"
+                  placeholder="name"
+                />
+                <p class="required">(*)</p>
+              </div>
+              <p id="tb-name" class="thongBao"></p>
             </div>
             <div class="col">
-              <input
-                name="password"
-                id="password"
-                type="password"
-                class="input-control"
-                placeholder="password"
-              />
-              <p class="thongBao tb-password">(*)</p>
+              <div>
+                <input
+                  name="password"
+                  id="password"
+                  type="password"
+                  class="input-control"
+                  placeholder="password"
+                />
+                <p class="required">(*)</p>
+              </div>
+              <p id="tb-password" class="thongBao"></p>
             </div>
             <div class="col">
-              <input
-                name="phone"
-                id="phone"
-                type="number"
-                class="input-control"
-                placeholder="phone"
-              />
-              <p class="thongBao tb-phone">(*)</p>
+              <div>
+                <input
+                  name="phone"
+                  id="phone"
+                  type="number"
+                  class="input-control"
+                  placeholder="phone"
+                />
+                <p class="required">(*)</p>
+              </div>
+              <p id="tb-phone" class="thongBao"></p>
             </div>
             <div class="col">
-              <input
-                name="password-confirm"
-                id="password-confirm"
-                type="password"
-                class="input-control"
-                placeholder="password confirm"
-              />
-              <p class="thongBao tb-password-confirm">(*)</p>
+              <div>
+                <input
+                  name="password-confirm"
+                  id="password-confirm"
+                  type="password"
+                  class="input-control"
+                  placeholder="password confirm"
+                />
+                <p class="required">(*)</p>
+              </div>
+              <p id="tb-password-confirm" class="thongBao"></p>
             </div>
             <div class="col">
-              <label class="lable-radio">Gender</label>
-              <input
-                type="radio"
-                class="input-radio"
-                id="male"
-                name="input-radio"
-                checked
-              />
-              <label class="lable-radio" for="male">Male</label>
-              <input
-                type="radio"
-                class="input-radio"
-                id="feMale"
-                name="input-radio"
-              />
-              <label class="lable-radio" for="feMale">Female</label>
+              <label class="lable-radio" for="male">
+                <input
+                  type="radio"
+                  class="input-radio"
+                  id="male"
+                  name="gender"
+                  value="true"
+                  checked
+                />Male
+              </label>
+              <label class="lable-radio" for="feMale">
+                <input
+                  type="radio"
+                  class="input-radio"
+                  id="feMale"
+                  name="gender"
+                  value="false"
+                />Female
+              </label>
             </div>
           </div>
           <div class="submit">
