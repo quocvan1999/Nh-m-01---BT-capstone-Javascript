@@ -65,18 +65,87 @@
       </nav>
     </header>
 
-    <!-- PRODUCT DETAIL -->
-    <main class="product-detail"></main>
-
-    <!-- REALATE PRODUCT -->
-    <section class="product-relate">
+    <!-- REGISTER -->
+    <main class="register">
       <div class="container">
-        <h1 class="title">- Realate Product -</h1>
-        <div class="product-list">
-          <div class="row"></div>
-        </div>
+        <h1 class="title">Register</h1>
+        <form id="form-register">
+          <div class="row">
+            <div class="col">
+              <input
+                name="email"
+                id="email"
+                type="email"
+                class="input-control"
+                placeholder="email"
+              />
+              <p class="thongBao tb-email">(*)</p>
+            </div>
+            <div class="col">
+              <input
+                name="name"
+                id="name"
+                type="text"
+                class="input-control"
+                placeholder="name"
+              />
+              <p class="thongBao tb-name">(*)</p>
+            </div>
+            <div class="col">
+              <input
+                name="password"
+                id="password"
+                type="password"
+                class="input-control"
+                placeholder="password"
+              />
+              <p class="thongBao tb-password">(*)</p>
+            </div>
+            <div class="col">
+              <input
+                name="phone"
+                id="phone"
+                type="number"
+                class="input-control"
+                placeholder="phone"
+              />
+              <p class="thongBao tb-phone">(*)</p>
+            </div>
+            <div class="col">
+              <input
+                name="password-confirm"
+                id="password-confirm"
+                type="password"
+                class="input-control"
+                placeholder="password confirm"
+              />
+              <p class="thongBao tb-password-confirm">(*)</p>
+            </div>
+            <div class="col">
+              <label>Gender</label>
+              <div>
+                <input
+                  type="radio"
+                  class="input-radio"
+                  id="male"
+                  name="male"
+                  checked
+                />
+                <label for="male">Male</label>
+                <input
+                  type="radio"
+                  class="input-radio"
+                  id="feMale"
+                  name="feMale"
+                />
+                <label for="feMale">Female</label>
+              </div>
+            </div>
+          </div>
+          <button class="btn-submit">Submit</button>
+        </form>
       </div>
-    </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -152,6 +221,6 @@
     <script type="module" src="./assets/js/main.js"></script>
 
     <!-- Detail js -->
-    <script type="module" src="./controllers/detail.js"></script>
+    <script type="module" src="./controllers/register.js"></script>
   </body>
 </html>

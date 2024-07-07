@@ -1,0 +1,12 @@
+.input {
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 3px solid $text-purple;
+  @include textStyle($fs-4xl, $fw-400, $text-black);
+  &::placeholder {
+    @include textStyle($fs-4xl, $fw-400, $text-black);
+  }
+  &:focus {
+    outline: none;
+  }
+}

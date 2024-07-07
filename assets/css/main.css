@@ -65,7 +65,7 @@ a {
   color: #fc0303;
 }
 
-.button, .product-relate .container .product-list .row .col .item-content .item-action .btn-buy, .product-detail .container .detail-content .btn-addToCard, .product-detail .container .detail-content .quantity .btn-quantity, .product-detail .container .detail-content .product-size .list-size .btn-size {
+.button, .register .container #form-register .btn-submit, .product-relate .container .product-list .row .col .item-content .item-action .btn-buy, .product-detail .container .detail-content .btn-addToCard, .product-detail .container .detail-content .quantity .btn-quantity, .product-detail .container .detail-content .product-size .list-size .btn-size {
   font-size: 24px;
   font-weight: 600;
   color: #000000;
@@ -76,9 +76,31 @@ a {
   transition: all 0.3s;
   cursor: pointer;
 }
-.button:hover, .product-relate .container .product-list .row .col .item-content .item-action .btn-buy:hover, .product-detail .container .detail-content .btn-addToCard:hover, .product-detail .container .detail-content .quantity .btn-quantity:hover, .product-detail .container .detail-content .product-size .list-size .btn-size:hover {
+.button:hover, .register .container #form-register .btn-submit:hover, .product-relate .container .product-list .row .col .item-content .item-action .btn-buy:hover, .product-detail .container .detail-content .btn-addToCard:hover, .product-detail .container .detail-content .quantity .btn-quantity:hover, .product-detail .container .detail-content .product-size .list-size .btn-size:hover {
   color: #000000;
   background: #ececec;
+}
+
+.input, .register .container #form-register .row .col .input-control {
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 3px solid #ae18e2;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+.input::-moz-placeholder, .register .container #form-register .row .col .input-control::-moz-placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+.input::placeholder, .register .container #form-register .row .col .input-control::placeholder {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+.input:focus, .register .container #form-register .row .col .input-control:focus {
+  outline: none;
 }
 
 .header {
@@ -344,6 +366,7 @@ a {
   justify-content: space-between;
 }
 .product-relate .container .product-list .row .col {
+  cursor: pointer;
   padding: 10px;
   width: 33.3333333333%;
 }
@@ -392,8 +415,6 @@ a {
   line-height: 29.05px;
   width: 60%;
   padding: 15px 0;
-  display: inline-block;
-  text-align: center;
 }
 .product-relate .container .product-list .row .col .item-content .item-action .item-price {
   font-size: 24px;
@@ -404,4 +425,36 @@ a {
   width: 40%;
   text-align: center;
   padding: 15px 0;
+}
+
+.register {
+  padding: 100px 0;
+}
+.register .container .title {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 48.41px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.register .container #form-register .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.register .container #form-register .row .col {
+  width: 50%;
+  display: flex;
+  margin-bottom: 15px;
+}
+.register .container #form-register .row .col .thongBao {
+  color: #fc0303;
+}
+.register .container #form-register .btn-submit {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 36.31px;
+  background: #ae18e2;
+  padding: 5px 20px;
 }/*# sourceMappingURL=main.css.map */

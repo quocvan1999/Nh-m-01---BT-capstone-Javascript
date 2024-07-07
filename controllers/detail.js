@@ -40,6 +40,7 @@ window.renderRelatedProducts = function (arrRelated) {
   arrRelated.map((product) => {
     html += `
       <div class="col">
+              <a href="./detail.html?productId=${product.id}">
               <div class="item-img">
                 <img src="${product.image}" alt="image product" />
               </div>
@@ -49,10 +50,11 @@ window.renderRelatedProducts = function (arrRelated) {
                   <p class="item-describe">${product.shortDescription}</p>
                 </div>
                 <div class="item-action">
-                  <a href="./detail.html?productId=${product.id}" class="btn-buy">Buy now</a>
+                  <button href="./detail.html?productId=${product.id}" class="btn-buy">Buy now</button>
                   <p class="item-price">${product.price}$</p>
                 </div>
               </div>
+              </a>
             </div>
     `;
   });
