@@ -96,7 +96,7 @@
         justify-content: space-between;
         .col {
           cursor: pointer;
-          padding: 10px;
+          padding: 30px;
           width: calc(100% / 3);
           @media screen and (max-width: 768px) {
             width: calc(100% / 2);
@@ -114,7 +114,7 @@
             width: 100%;
             background: $bg-gray;
             .content {
-              padding: 15px;
+              padding: 30px;
               .item-name {
                 @include textStyle($fs-3xl, $fw-300, $text-black);
                 line-height: $lh-3;

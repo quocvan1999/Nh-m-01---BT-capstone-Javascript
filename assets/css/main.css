@@ -367,7 +367,7 @@ a {
 }
 .product-relate .container .product-list .row .col {
   cursor: pointer;
-  padding: 10px;
+  padding: 30px;
   width: 33.3333333333%;
 }
 @media screen and (max-width: 768px) {
@@ -389,7 +389,7 @@ a {
   background: #f8f8f8;
 }
 .product-relate .container .product-list .row .col .item-content .content {
-  padding: 15px;
+  padding: 30px;
 }
 .product-relate .container .product-list .row .col .item-content .content .item-name {
   font-size: 24px;
