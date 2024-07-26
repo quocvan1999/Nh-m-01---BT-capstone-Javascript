@@ -515,6 +515,9 @@ a {
     width: 100%;
   }
 }
+.product-relate .container .product-list .row .col .item-img {
+  background: #f8f8f8;
+}
 .product-relate .container .product-list .row .col .item-img img {
   display: block;
   width: 100%;
